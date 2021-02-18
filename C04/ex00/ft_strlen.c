@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 int	ft_strlen(char *str)
 {
 	int i;
@@ -21,3 +23,10 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
+
+int main ()
+{
+	char str [] = " Je mange des pommes";
+	ft_strlen(str);
+	return (0);
+}	
