@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmenezes <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/17 10:26:16 by nmenezes          #+#    #+#             */
-/*   Updated: 2021/02/19 14:52:48 by nmenezes         ###   ########.fr       */
+/*   Created: 2021/02/17 15:49:18 by nmenezes          #+#    #+#             */
+/*   Updated: 2021/02/17 16:48:16 by nmenezes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+#include <stdio.h>
+
+int	ft_strlen(char *str)
 {
 	int i;
-	int j;
 
-	if (*to_find == '\0')
-		return (str);
 	i = 0;
 	while (str[i])
-	{
-		j = 0;
-		while (to_find[j] == str[i + j])
-		{
-			if (to_find[j + 1] == '\0')
-			{
-				return (str + i);
-			}
-			j++;
-		}
 		i++;
-	}
-	return (0);
+	return (i);
 }
+
+unsigned int ft_strlcat(char *dest, char *src, unsigned int size)
+{
+
+	
+
+
+
+
+
+
+}
+
